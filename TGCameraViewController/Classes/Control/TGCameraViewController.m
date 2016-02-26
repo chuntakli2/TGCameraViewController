@@ -313,7 +313,7 @@
     CGFloat radians = degress * M_PI / 180;
     CGAffineTransform transform = CGAffineTransformMakeRotation(radians);
     
-    [UIView animateWithDuration:.5f animations:^{
+    [UIView animateWithDuration:.3f animations:^{
         _gridButton.transform =
         _toggleButton.transform =
         _albumButton.transform =

@@ -60,13 +60,13 @@
     self.transform = CGAffineTransformMakeScale(1.5f, 1.5f);
     self.alpha = 0;
     
-    [UIView animateWithDuration:0.3f delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+    [UIView animateWithDuration:0.1f delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         
         self.transform = CGAffineTransformIdentity;
         self.alpha = 1;
         
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.4f delay:0 options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat animations:^{
+        [UIView animateWithDuration:0.2f delay:0 options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat animations:^{
             
             self.transform = CGAffineTransformMakeScale(1.2f, 1.2f);
             self.alpha = 1;
